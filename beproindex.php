@@ -25,7 +25,7 @@
 
 <!-- CAROUSEL -->
 <div class="carousel-container container">
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
   <div id="carousel" class="carousel-inner">
 
     <div class="carousel-item active">
@@ -134,14 +134,13 @@
 
   <div class="row">
 
-    <div id="popular-product" class="col-sm">
+    <div id="popular-product" class="col-md">
       <a href="beproproduct.php">
        <img class="mt-4 img-fluid img-shirt" src="medias/popularproduct2.png" alt="Popular Product">
        </a>
     </div> &emsp;
 
-    <div class="box col-sm">
-
+    <div class="box col-md">
 <div class="row">
 <div class="col-sm-10">
     <a href="beproproduct.php">
@@ -153,7 +152,6 @@
     </div>
 </div>
 
-
 <div class="row">
       <p class="fs-5 playfair">Essential cotton-blend</p>
       <p class="montserrat fs-6 blue-text"><span class="grey-text text-decoration-line-through">$200.000 USD</span> &emsp; $100.00 USD</p>
@@ -161,7 +159,7 @@
 
     </div> &emsp;
 
-    <div class="box col-sm">
+    <div class="box col-md">
     <a href="beproproduct.php">
      <img class="img-fluid img-shirt" src="medias/shirt2.png" alt="Popular Product">
      </a>
@@ -169,7 +167,7 @@
      <p class="montserrat fs-6 blue-text">$175.00 USD</p>
   </div> &emsp;
 
-    <div class="box col-sm">
+    <div class="box col-md">
     <a href="beproproduct.php">
       <img class="img-fluid img-shirt" src="medias/shirt3.png" alt="">
       </a>
@@ -219,7 +217,7 @@
 
 <div class="row">
 
-  <div class="box col-sm">
+  <div class="box col-md">
       <a href="beproproduct.php">
          <img class="img-fluid img-shirt" src="medias/juperose.png" alt="Popular Product">
       </a>
@@ -228,7 +226,7 @@
   </div> &emsp;
 
 
-  <div class="box col-sm">
+  <div class="box col-md">
   <div class="row">
   <div class="col-sm-10">
      <a href="beproproduct.php">
@@ -246,7 +244,7 @@
   </div> &emsp;
 
 
-  <div class="box col-sm">
+  <div class="box col-md">
       <a href="beproproduct.php">
          <img class="img-fluid img-shirt" src="medias/chalerose" alt="">
       </a>
@@ -254,7 +252,7 @@
     <p class="montserrat fs-6 blue-text">$175.00 USD</p>
   </div> &emsp;
 
-  <div class="box col-sm">
+  <div class="box col-md">
         <a href="beproproduct.php">
               <img class="img-fluid img-shirt" src="medias/imageproduct1.png" alt="">
         </a>
@@ -271,8 +269,9 @@
 
 <!--EVENT CAROUSEL -->
 
+
 <div id="event" class="carousel-container container mb-5 mt-5">
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel">
   <div class="carousel-inner">
 
     <div class="carousel-item active">
@@ -294,11 +293,11 @@
     </div>
 
   </div>
-  <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+  <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"  data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
 </a>
-  <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+  <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"  data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
 </a>

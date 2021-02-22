@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="bepro.css" rel="stylesheet">
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
     <title>BePro</title>
   </head>
@@ -48,7 +48,7 @@
                        <div class="col-sm-6">
 <p>COLOR</p>
 <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-<a class="nav-link colors-product-white" href="#">v</a> &emsp;
+<a class="nav-link colors-product-white text-black" href="#">√</a> &emsp;
 <a class="nav-link colors-product-red"  href="#">R</a> &emsp;
 <a class="nav-link colors-product-yellow" href="#">Y</a> &emsp;
 <a class="nav-link colors-product-green"  href="#">G</a>
@@ -70,10 +70,16 @@
 <br><br>
 
                        <div class="row">   <!-- ROW 3 COL GAUCHE -->
-                         <div class="col">
+                         <div class="col-sm">
                          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                         <p class="fs-5 red-text fw-bold">$47.00 <span class="fs-6 grey-text text-decoration-line-through fw-light">$64.00</span></p> &emsp;
-                         <a class="nav-link button-grey montserrat fs-6 fw-bold"  href="#">- &emsp; 02 &emsp; +</a> &emsp;
+                         <p class="fs-5 red-text fw-bold montserrat">$47.00 <span class="fs-6 grey-text text-decoration-line-through fw-light">$64.00</span></p> &emsp;
+
+                         <div class="montserrat btn-group" role="group" aria-label="Basic example">
+                               <button type="button" class="button-addcart button-moins fw-bold">-</button>
+                               <button type="button" class="button-addcart button-nbr fw-bold">02</button>
+                               <button type="button" class="button-addcart button-plus fw-bold">+</button>
+                         </div> &emsp;
+
                          <a class="nav-link button-blue montserrat fs-6 fw-bold"  href="#">+ Add to cart</a>
                       </div>
                       </div>
@@ -86,7 +92,7 @@
 
 
   <!-- COLONNE MILIEU -->      <div class="col-sm-4 p-3 bg"> 
-<img  src="medias/imageproduct1.png" alt="">
+<img class="img-fluid img-shirt" src="medias/imageproduct1.png" alt="">
         </div>  <!-- FIN COLONNE MILIEU -->
 
 
@@ -112,16 +118,33 @@
 
 </div>  <!-- FIN COLONNE DROITE SUGGESTS -->
 
-
-
-
-
-
-
-
-
       </div>  <!-- FIN ROW PRODUIT -->
 </div>  <!-- FIN CONTAINER PRODUIT -->
+
+
+
+
+<div class="container box">
+<div class="row">
+<nav>
+  <div class="nav nav-tabs fw-bold montserrat fs-6" id="nav-tab" role="tablist">
+    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">SPECIFICATION</button>
+    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">DESCRIPTION</button>
+  </div>
+</nav>
+</div>
+<div class="row description pb-10">
+<div class="tab-content pt-3" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem ipsa tempora nostrum. Est sed modi tempora incidunt nesciunt voluptates molestiae illo eveniet nulla, tempore nam tenetur inventore ad nihil possimus?</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+</div>
+</div>
+
+</div>
+
+
+
+
 
 
 
@@ -130,22 +153,32 @@
 
 <div class="row">
 
-  <div id="popular-product" class="col-sm">
+  <div id="popular-product" class="col-md">
     <a href="beproproduct.php">
      <img class="mt-4 img-fluid img-shirt" src="medias/popularproduct2.png" alt="Popular Product">
      </a>
   </div> &emsp;
 
-  <div class="box col-sm">
+  <div class="box col-md">
+<div class="row">
+<div class="col-sm-10">
   <a href="beproproduct.php">
     <img class="img-fluid img-shirt" src="medias/shirt1.png" alt="">
     </a>
+</div>
+    <div class="col-2 pt-1">
+    <p class="button-sale montserrat fs-6 fw-bold">sale</p>
+  </div>
+</div>
+
+<div class="row">
     <p class="fs-5 playfair">Essential cotton-blend</p>
     <p class="montserrat fs-6 blue-text"><span class="grey-text text-decoration-line-through">$200.000 USD</span> &emsp; $100.00 USD</p>
-    
+</div>
+
   </div> &emsp;
 
-  <div class="box col-sm">
+  <div class="box col-md">
   <a href="beproproduct.php">
    <img class="img-fluid img-shirt" src="medias/shirt2.png" alt="Popular Product">
    </a>
@@ -153,7 +186,7 @@
    <p class="montserrat fs-6 blue-text">$175.00 USD</p>
 </div> &emsp;
 
-  <div class="box col-sm">
+  <div class="box col-md">
   <a href="beproproduct.php">
     <img class="img-fluid img-shirt" src="medias/shirt3.png" alt="">
     </a>
